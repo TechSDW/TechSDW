@@ -40,12 +40,17 @@ nav{
     height: 100vh;
     justify-content: center;}
 
+.navfixa{
+    position: fixed;
+    top: 0;
+    width: 370px;}
+
 button{
     background-color: unset;
     border: 0;
     font-size: 30px;}
 
-.conteudo{
+.principal{
     background-color: white;
     width: 70%;
     border-radius: 20px;
@@ -58,9 +63,13 @@ button{
     display: flex;
     flex-direction: column;}
 
-.conteudo h1{
+.descriçao{
+    width: 70%;
+    margin-left: 390px;}
+
+.principal h1{
     color: black;
     margin-bottom: 30px;}
 
-.conteudo p{
+.principal p{
     color: black;}
