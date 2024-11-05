@@ -196,3 +196,9 @@ function curso(){
     document.getElementById("softskill").classList.remove("activated")
     document.getElementById("hardskill").classList.remove("activated")
     document.getElementById("sobremim").classList.remove("activated")}
+
+function mouse(x){
+    x.classList.add("mouse");}
+
+function mouseout(x){
+    x.classList.remove("mouse")}
