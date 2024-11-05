@@ -3,16 +3,22 @@
     padding: 0;
     color: white;}
 
+@font-face {
+    font-family: 'Confortaa';
+    src: url(../fonts/comfortaa/Comfortaa-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;}
+
 body{
-    background-color: rgb(27, 27, 27);}
+    background-color: rgb(27, 27, 27);
+    font-family: 'Confortaa';}
 
 header{
     background-color: black;
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    padding-bottom: 40px;
-    z-index: 1000;}
+    padding-bottom: 40px;}
 
 .nomecontato{
     display: flex;
@@ -24,6 +30,9 @@ header{
 .contato{
     display: flex;
     align-items: center;}
+
+.contato > p{
+    color: white;}
 
 a > img{
     width: 77%;
@@ -38,17 +47,27 @@ nav{
     background-color: crimson;
     width: 30%;
     height: 100vh;
-    justify-content: center;}
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;}
 
 .navfixa{
     position: fixed;
     top: 0;
-    width: 370px;}
+    width: 370px;
+    border-radius: 0;}
 
 button{
     background-color: unset;
     border: 0;
-    font-size: 30px;}
+    font-size: 30px;
+    font-family: 'Confortaa';
+    margin-top: 5px;
+    margin-bottom: 5px;}
+
+.activated{
+    background-color: rgba(255, 255, 255, .3);
+}
 
 .principal{
     background-color: white;
@@ -61,15 +80,38 @@ button{
     padding-right: 35px;
     padding-bottom: 30px;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    min-height: 100vh;}
 
 .descriçao{
     width: 70%;
     margin-left: 390px;}
 
-.principal h1{
+.principal > h1{
+    color: black;
+    margin-bottom: 35px;
+    font-size: 40px;
+    margin-top: 20px;}
+
+h2{
+    color: black;
+    margin-bottom: 20px;}
+
+h3{
+    color: black;
+    margin-bottom: 20px;}
+
+p{
     color: black;
     margin-bottom: 30px;}
 
-.principal p{
+li{
+    color: black;
+    margin-left: 40px;
+    margin-bottom: 8px;}
+
+ul{
+    margin-bottom: 30px;}
+
+strong{
     color: black;}
