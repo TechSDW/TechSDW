@@ -29,7 +29,8 @@ function sobremim(){
 <ul>
     <li>Jogar videogame</li>
     <li>Assistir videos no Youtube</li>
-</ul>`
+</ul>
+`
 
     document.getElementById("conteudo").innerHTML = sobremim
     document.getElementById(ContAtual).classList.remove("activated")
@@ -121,6 +122,8 @@ function softskill(){
     <li>Amigável</li>
     <li>Obstinado</li>
 </ul>
+
+<img src="assets/img/swotFabio.png" alt="" style="width: 80%;">
 `
 
     document.getElementById("conteudo").innerHTML = softskill
