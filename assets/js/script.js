@@ -1,4 +1,19 @@
-const SobreMim = `
+window.addEventListener("scroll", function(){
+    const navbar = document.getElementById("navbar")
+    const principal = document.getElementById("conteudo")
+
+    if (window.scrollY >= 361.97){
+        navbar.classList.add("navfixa");
+        principal.classList.add("descriçao")}
+    else{
+        navbar.classList.remove("navfixa");
+        principal.classList.remove("descriçao")}
+});
+
+var ContAtual = 'sobremim'
+
+function sobremim(){
+    var sobremim = `
 <h1>Sobre Mim</h1>
 
 <h2>Apresentação</h2>
@@ -14,14 +29,34 @@ const SobreMim = `
 <ul>
     <li>Jogar videogame</li>
     <li>Assistir videos no Youtube</li>
-</ul>
-`
+</ul>`
 
-const Curriculo = `
+    document.getElementById("conteudo").innerHTML = sobremim
+    document.getElementById(ContAtual).classList.remove("activated")
+    document.getElementById("sobremim").classList.add("activated")
+    ContAtual = 'sobremim'
+    var curriculo = ""
+    var projeto = ""
+    var softskill = ""
+    var hardskill = ""
+    var curso = ""}
+
+function curriculo(){
+    var curriculo = `
 <a href="assets/downloads/Currículo - Fábio H Nawa.pdf" download="" style="color: black;">Baixar pdf do currículo</a>
 `
+    document.getElementById("conteudo").innerHTML = curriculo
+    document.getElementById(ContAtual).classList.remove("activated")
+    document.getElementById("curriculo").classList.add("activated")
+    ContAtual = 'curriculo'
+    var sobremim = ""
+    var projeto = ""
+    var softskill = ""
+    var hardskill = ""
+    var curso = ""}
 
-const Projeto = `
+function projeto(){
+    var projeto = `
 <h1>Projetos</h1>
 <p>Todos os projetos estão disponíveis no meu GitHub.</p>
 
@@ -65,7 +100,18 @@ const Projeto = `
 <p>Como os meus parceiros ainda estavam tendo o primeiro contato com o Git e o GitHub, eu fui atrás para conhecer mais sobre suas funcionalidades.</p>
 `
 
-const Softskill = `
+    document.getElementById("conteudo").innerHTML = projeto
+    document.getElementById(ContAtual).classList.remove("activated")
+    document.getElementById("projeto").classList.add("activated")
+    ContAtual = 'projeto'
+    var curriculo = ""
+    var sobremim = ""
+    var softskill = ""
+    var hardskill = ""
+    var curso = ""}
+
+function softskill(){
+    var softskill = `
 <h1>Softskills</h1>
 
 <ul>
@@ -77,7 +123,18 @@ const Softskill = `
 </ul>
 `
 
-const Hardskill = `
+    document.getElementById("conteudo").innerHTML = softskill
+    document.getElementById(ContAtual).classList.remove("activated")
+    document.getElementById("softskill").classList.add("activated")
+    ContAtual = 'softskill'
+    var curriculo = ""
+    var projeto = ""
+    var sobremim = ""
+    var hardskill = ""
+    var curso = ""}
+
+function hardskill(){
+    var hardskill = `
 <h1>Hardskills</h1>
 <ul>
     <li>HTML e CSS</li>
@@ -104,98 +161,53 @@ const Hardskill = `
 <p><strong>Data de conclusão prevista: </strong>Julho de 2027</p>
 `
 
-const Curso = `
-<h1>Cursos</h1>
-
-<h2>Power BI - Básico</h2>
-<p style="margin-bottom: 10px;"><strong>Local: </strong>SENAI São José dos Campos</p>
-<p style="margin-bottom: 10px;"><strong>Duração: </strong>20 horas</p>
-<p><strong>Data de conclusão: </strong>Julho de 2023</p>
-                
-<h2>Linux Unhatched</h2>
-<p style="margin-bottom: 10px;"><strong>Local: </strong>Cisco</p>
-<p><strong>Data de conclusão: </strong>Setembro de 2024</p>
-                
-<h2>IT Essentials</h2>
-<p style="margin-bottom: 10px;"><strong>Local: </strong>Cisco</p>
-<p><strong>Data de conclusão: </strong>Dezembro de 2024</p>
-                
-<h2>Desenvolvimento Web/Mobile</h2>
-<p style="margin-bottom: 10px;"><strong>Local: </strong>SENAI São José dos Campos</p>
-<p style="margin-bottom: 10px;"><strong>Duração: </strong>120 horas</p>
-<p><strong>Data de conclusão: </strong>Novembro de 2024</p>
-                
-<h2>Práticas e comportamentos do mercado de trabalho</h2>
-<p style="margin-bottom: 10px;"><strong>Local: </strong>SENAI São José dos Campos</p>
-<p style="margin-bottom: 10px;"><strong>Duração: </strong>12  horas</p>
-<p><strong>Data de conclusão: </strong>Novembro de 2024</p>
-`
-
-window.addEventListener("scroll", function(){
-    const navbar = document.getElementById("navbar")
-    const principal = document.getElementById("conteudo")
-
-    if (window.scrollY >= 361.97){
-        navbar.classList.add("navfixa");
-        principal.classList.add("descriçao")}
-    else{
-        navbar.classList.remove("navfixa");
-        principal.classList.remove("descriçao")}
-});
-
-function sobremim(){
-    document.getElementById("conteudo").innerHTML = SobreMim
-    document.getElementById("sobremim").classList.add("activated")
-    document.getElementById("curriculo").classList.remove("activated")
-    document.getElementById("projeto").classList.remove("activated")
-    document.getElementById("softskill").classList.remove("activated")
-    document.getElementById("hardskill").classList.remove("activated")
-    document.getElementById("curso").classList.remove("activated")}
-
-function curriculo(){
-    document.getElementById("conteudo").innerHTML = Curriculo
-    document.getElementById("curriculo").classList.add("activated")
-    document.getElementById("sobremim").classList.remove("activated")
-    document.getElementById("projeto").classList.remove("activated")
-    document.getElementById("softskill").classList.remove("activated")
-    document.getElementById("hardskill").classList.remove("activated")
-    document.getElementById("curso").classList.remove("activated")}
-
-function projeto(){
-    document.getElementById("conteudo").innerHTML = Projeto
-    document.getElementById("projeto").classList.add("activated")
-    document.getElementById("curriculo").classList.remove("activated")
-    document.getElementById("sobremim").classList.remove("activated")
-    document.getElementById("softskill").classList.remove("activated")
-    document.getElementById("hardskill").classList.remove("activated")
-    document.getElementById("curso").classList.remove("activated")}
-
-function softskill(){
-    document.getElementById("conteudo").innerHTML = Softskill
-    document.getElementById("softskill").classList.add("activated")
-    document.getElementById("curriculo").classList.remove("activated")
-    document.getElementById("projeto").classList.remove("activated")
-    document.getElementById("sobremim").classList.remove("activated")
-    document.getElementById("hardskill").classList.remove("activated")
-    document.getElementById("curso").classList.remove("activated")}
-
-function hardskill(){
-    document.getElementById("conteudo").innerHTML = Hardskill
+    document.getElementById("conteudo").innerHTML = hardskill
+    document.getElementById(ContAtual).classList.remove("activated")
     document.getElementById("hardskill").classList.add("activated")
-    document.getElementById("curriculo").classList.remove("activated")
-    document.getElementById("projeto").classList.remove("activated")
-    document.getElementById("softskill").classList.remove("activated")
-    document.getElementById("sobremim").classList.remove("activated")
-    document.getElementById("curso").classList.remove("activated")}
+    ContAtual = 'hardskill'
+    var curriculo = ""
+    var projeto = ""
+    var softskill = ""
+    var sobremim = ""
+    var curso = ""}
 
 function curso(){
-    document.getElementById("conteudo").innerHTML = Curso
+    var curso = `
+    <h1>Cursos</h1>
+    
+    <h2>Power BI - Básico</h2>
+    <p style="margin-bottom: 10px;"><strong>Local: </strong>SENAI São José dos Campos</p>
+    <p style="margin-bottom: 10px;"><strong>Duração: </strong>20 horas</p>
+    <p><strong>Data de conclusão: </strong>Julho de 2023</p>
+                    
+    <h2>Linux Unhatched</h2>
+    <p style="margin-bottom: 10px;"><strong>Local: </strong>Cisco</p>
+    <p><strong>Data de conclusão: </strong>Setembro de 2024</p>
+                    
+    <h2>IT Essentials</h2>
+    <p style="margin-bottom: 10px;"><strong>Local: </strong>Cisco</p>
+    <p><strong>Data de conclusão: </strong>Dezembro de 2024</p>
+                    
+    <h2>Desenvolvimento Web/Mobile</h2>
+    <p style="margin-bottom: 10px;"><strong>Local: </strong>SENAI São José dos Campos</p>
+    <p style="margin-bottom: 10px;"><strong>Duração: </strong>120 horas</p>
+    <p><strong>Data de conclusão: </strong>Novembro de 2024</p>
+                    
+    <h2>Práticas e comportamentos do mercado de trabalho</h2>
+    <p style="margin-bottom: 10px;"><strong>Local: </strong>SENAI São José dos Campos</p>
+    <p style="margin-bottom: 10px;"><strong>Duração: </strong>12  horas</p>
+    <p><strong>Data de conclusão: </strong>Novembro de 2024</p>
+    `
+
+    document.getElementById("conteudo").innerHTML = curso
+    document.getElementById(ContAtual).classList.remove("activated")
     document.getElementById("curso").classList.add("activated")
-    document.getElementById("curriculo").classList.remove("activated")
-    document.getElementById("projeto").classList.remove("activated")
-    document.getElementById("softskill").classList.remove("activated")
-    document.getElementById("hardskill").classList.remove("activated")
-    document.getElementById("sobremim").classList.remove("activated")}
+    ContAtual = 'curso'
+    var curriculo = ""
+    var projeto = ""
+    var softskill = ""
+    var hardskill = ""
+    var sobremim = ""}
 
 function mouse(x){
     x.classList.add("mouse");}
