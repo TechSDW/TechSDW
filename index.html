@@ -8,35 +8,26 @@
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <img src="assets/img/FotoPerfil.jpg" alt="" style="width: 20%; border-radius: 100%; margin-right: 50px;">
 
             <section class="nomecontato">
                 <h1>Fábio Hiromitsu Nawa</h1>
                 <h3 style="margin-bottom: 50px; color: rgb(170, 170, 170);">Game Developer</h3>
-                <h3 style="margin-bottom: 20px; color: white;">Contato</h3>
-                <div class="contato">
-                    <a href="https://github.com/TechSDW"><img src="assets/img/github.png" alt=""></a>
-                    <p style="margin-right: 30px; margin-bottom: 0;">GitHub</p>
-                    <a href="https://www.linkedin.com/in/f%C3%A1biohnawa/"><img src="assets/img/linkedin.png" alt=""></a>
-                    <p style="margin-right: 30px; margin-bottom: 0;">LinkedIn</p>
-                    <img src="assets/img/email.png" alt="" style="width: 8%; margin-right: 15px;">
-                    <p style="margin-right: 30px; margin-bottom: 0;">fbnawa@gmail.com</p>
-                    <img src="assets/img/telefone.png" alt="" style="width: 8%; margin-right: 15px;">
-                    <p style="margin-bottom: 0;">(12) 98119-6396</p>
-                </div>
             </section>
         </header>
 
-        <main>
+        <main id="main">
             <nav id="navbar">
-                <button onclick="sobremim()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)" class="activated" id="sobremim">Sobre Mim</button>
-                <button onclick="curriculo()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)" id="curriculo">Currículo</button>
-                <button onclick="projeto()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="projeto">Projetos</button>
-                <button onclick="softskill()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="softskill">Softskills</button>
-                <button onclick="hardskill()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="hardskill">Hardskills</button>
-                <button onclick="curso()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="curso">Cursos</button>
-                <button>Contato</button>
+                <div class="botoes">
+                    <button onclick="sobremim()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)" class="activated" id="sobremim">Sobre Mim</button>
+                    <button onclick="curriculo()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)" id="curriculo">Currículo</button>
+                    <button onclick="projeto()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="projeto">Projetos</button>
+                    <button onclick="softskill()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="softskill">Softskills</button>
+                    <button onclick="hardskill()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="hardskill">Hardskills</button>
+                    <button onclick="curso()" onmouseenter="mouse(this)" onmouseleave="mouseout(this)"  id="curso">Cursos</button>
+                    <button>Contato</button>
+                </div>
             </nav>
 
             <section class="principal" id="conteudo">
@@ -58,6 +49,36 @@
                 </ul>
             </section>
         </main>
+
+        <footer id="footer">
+            <h1>Entre em contato!</h1>
+            <div class="contato">
+                <div class="contatos">
+                    <a href="https://github.com/TechSDW">
+                        <img src="assets/img/github.png" alt="">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+
+                <div class="contatos">
+                    <a href="https://www.linkedin.com/in/f%C3%A1biohnawa/">
+                        <img src="assets/img/linkedin.png" alt="">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+
+                <div class="contatos">
+                    <img src="assets/img/email.png" alt="">
+                    <p>fbnawa@gmail.com</p>
+                </div>
+
+                <div class="contatos">
+                    <img src="assets/img/telefone.png" alt="">
+                    <p>(12) 98119-6396</p>
+                </div>
+            </div>
+        </footer>
+
         <script src="assets/js/script.js"></script>
     </body>
 </html>

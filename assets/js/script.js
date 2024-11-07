@@ -1,8 +1,14 @@
-window.addEventListener("scroll", function(){
-    const navbar = document.getElementById("navbar")
-    const principal = document.getElementById("conteudo")
+var alturahead = document.getElementById("header")
+var alturacont = document.getElementById("main")
+var alturafoot = document.getElementById("footer")
+var navbar = document.getElementById("navbar")
+var principal = document.getElementById("conteudo")
+var altnavfixa = document.querySelector(".navfixa")
 
-    if (window.scrollY >= 361.97){
+navbar.offsetHeight = alturacont.offsetHeight
+
+window.addEventListener("scroll", function(){
+    if (window.scrollY >= alturahead.getBoundingClientRect().height + 15 && window.scrollY <= alturahead.getBoundingClientRect().height + alturacont.getBoundingClientRect().height - alturafoot.getBoundingClientRect().height){
         navbar.classList.add("navfixa");
         principal.classList.add("descriçao")}
     else{

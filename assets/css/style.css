@@ -28,17 +28,6 @@ header{
     justify-content: center;
     margin-top: 80px;}
 
-.contato{
-    display: flex;
-    align-items: center;}
-
-.contato > p{
-    color: white;}
-
-a > img{
-    width: 77%;
-    margin-right: 10px;}
-
 main{
     display: flex;
     background: linear-gradient(90deg, #073265, #011329);}
@@ -48,7 +37,6 @@ nav{
     flex-direction: column;
     background-color: rgb(0, 55, 158);
     width: 30%;
-    height: 100vh;
     justify-content: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;}
@@ -57,7 +45,9 @@ nav{
     position: fixed;
     top: 0;
     width: 370px;
-    border-radius: 0;}
+    border-radius: 0;
+    background-color: rgb(0, 55, 158);
+    height: 100vh;}
 
 button{
     background-color: unset;
@@ -66,6 +56,10 @@ button{
     font-family: 'Confortaa';
     padding-top: 8px;
     padding-bottom: 8px;}
+
+.botoes{
+    display: flex;
+    flex-direction: column;}
 
 .activated{
     background-color: rgba(255, 255, 255, .3);}
@@ -120,3 +114,40 @@ strong{
 .mouse{
     background-color: rgba(0, 0, 0, .7);
     cursor: pointer;}
+
+footer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;}
+
+.contato{
+    display: flex;
+    align-items: center;}
+
+.contatos{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;}
+
+.contatos > img{
+    margin-right: 20px;}
+
+.contatos > a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;}
+
+a{
+    align-items: center;
+}
+
+a > p{
+    color: white;
+    text-decoration: none;
+    height: 100%;}
+
+a > img{
+    margin-right: 20px;}
+
+.contatos > p{
+    color: white;}
