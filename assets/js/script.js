@@ -8,7 +8,7 @@ var altnavfixa = document.querySelector(".navfixa")
 navbar.offsetHeight = alturacont.offsetHeight
 
 window.addEventListener("scroll", function(){
-    if (window.scrollY >= alturahead.getBoundingClientRect().height + 15 && window.scrollY <= alturahead.getBoundingClientRect().height + alturacont.getBoundingClientRect().height - alturafoot.getBoundingClientRect().height){
+    if (window.scrollY >= alturahead.getBoundingClientRect().height + 15 && window.scrollY <= alturahead.getBoundingClientRect().height + alturacont.getBoundingClientRect().height + alturafoot.getBoundingClientRect().height - window.innerHeight - 250){
         navbar.classList.add("navfixa");
         principal.classList.add("descriçao")}
     else{

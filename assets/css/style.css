@@ -30,7 +30,8 @@ header{
 
 main{
     display: flex;
-    background: linear-gradient(90deg, #073265, #011329);}
+    background: linear-gradient(90deg, #073265, #011329);
+    margin-bottom: 50px;}
 
 nav{
     display: flex;
@@ -96,7 +97,7 @@ h3{
     color: black;
     margin-bottom: 20px;}
 
-p{
+.principal > p{
     color: black;
     margin-bottom: 30px;}
 
@@ -116,9 +117,12 @@ strong{
     cursor: pointer;}
 
 footer{
-    height: 100vh;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    padding-bottom: 50px;}
 
 .contato{
     display: flex;
@@ -137,16 +141,15 @@ footer{
     display: flex;
     align-items: center;}
 
-a{
-    align-items: center;
-}
+.Acontato{
+    display: flex;
+    align-items: center;}
 
-a > p{
+.Acontato > p{
     color: white;
-    text-decoration: none;
     height: 100%;}
 
-a > img{
+.Acontato > img{
     margin-right: 20px;}
 
 .contatos > p{
